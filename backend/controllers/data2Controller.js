@@ -1,10 +1,9 @@
 import Data2 from "../models/data2Model.js";
 
-<<<<<<< HEAD
-=======
+
 
 // Create 
->>>>>>> 8570c46 (commit practice 4 additional)
+
 export const postData2 = async (req,res) =>{
     const {firstname,middlename,lastname} = req.body;
     
@@ -18,11 +17,8 @@ export const postData2 = async (req,res) =>{
     }
 };
 
-<<<<<<< HEAD
-=======
-// Read
 
->>>>>>> 8570c46 (commit practice 4 additional)
+
 export const getData2 = async (req, res) => {
   try {
     const data2 = await Data2.find().sort({ createdAt: -1 });
