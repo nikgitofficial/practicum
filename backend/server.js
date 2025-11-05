@@ -9,6 +9,8 @@ import data4Routes from "./routes/data4Routes.js";
 import questionRoutes from "./routes/questionRoutes.js";
 import answerRoutes from "./routes/answerRoutes.js";
 
+import v3Routes from "./routes/v3Routes.js";
+
 
 
 dotenv.config();
@@ -31,6 +33,7 @@ app.use("/api/data3",data3Routes);
 app.use("/api/data4",data4Routes);
 app.use("/api/questions", questionRoutes);
 app.use("/api/answers", answerRoutes);
+app.use("/api/v3",v3Routes);
 
 
 

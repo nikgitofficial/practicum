@@ -28,6 +28,14 @@ import Jsground4 from "./pages/Jsground4";
 import Jsground5 from "./pages/Jsground5";
 import Jsground6 from "./pages/Jsground6";
 import Jsground7 from "./pages/Jsground7";
+import Jsground8 from "./pages/Jsground8";
+
+ {/*V2 NAVBAR MENU*/}
+ import V1 from "./pages/DATAJS2/V1";
+ import V2 from "./pages/DATAJS2/V2";
+ import V3 from  "./pages/DATAJS2/V3";
+ import V4 from "./pages/DATAJS2/V4";
+ import V5 from "./pages/DATAJS2/V5";
 
 
 
@@ -44,7 +52,7 @@ const App = () => {
           <Route path="/data3" element={<Data3/>}/>
           <Route path="/data4" element={<Data4/>}/>
 
-=
+
           <Route path="/data5" element={<Data5/>}/>
           <Route path="/jslessons" element={<Jslessons/>}/>
           <Route path="/jslessons2" element={<Jslessons2/>}/>
@@ -62,6 +70,16 @@ const App = () => {
           <Route path="/jsground5" element ={<Jsground5/>}/>
           <Route path="/jsground6" element ={<Jsground6/>}/>
           <Route path="/jsground7" element ={<Jsground7/>}/>
+          <Route path="/jsground8" element ={<Jsground8/>}/>
+          {/*V2 NAVBAR MENU*/}
+          <Route path="/v1" element ={<V1/>}/>
+          <Route path="/v2" element={<V2/>}/> 
+          <Route path="/v3" element={<V3/>}/> 
+          <Route path="/v4" element={<V4/>}/> 
+          <Route path="/v5" element={<V5/>}/> 
+
+
+
           <Route path="/jsgames" element={<Jsgames/>}/>
           <Route path="/create-question" element={<QuestionCreator />} />
           <Route path="/questionnaire" element={<Questionnaire />} />

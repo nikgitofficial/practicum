@@ -10,15 +10,21 @@ import MenuItem from "@mui/material/MenuItem";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorEl2, setAnchorEl2] = useState(null);
 
+  // Menu 1 handlers
   const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
   const handleMenuClose = () => setAnchorEl(null);
+
+  // Menu 2 handlers
+  const handleMenuOpen2 = (event) => setAnchorEl2(event.currentTarget);
+  const handleMenuClose2 = () => setAnchorEl2(null);
 
   return (
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
-        JS
+          JS
         </Typography>
 
         <Box>
@@ -26,7 +32,7 @@ const Navbar = () => {
             Home
           </Button>
 
-          {/* Dropdown Menu */}
+          {/* Dropdown Menu 1 */}
           <Button color="inherit" onClick={handleMenuOpen}>
             Data & JS
           </Button>
@@ -50,7 +56,6 @@ const Navbar = () => {
             <MenuItem component={Link} to="/data5" onClick={handleMenuClose}>
               Data5
             </MenuItem>
-
             <MenuItem component={Link} to="/jslessons" onClick={handleMenuClose}>
               JS Lessons 1
             </MenuItem>
@@ -85,19 +90,48 @@ const Navbar = () => {
               JS Ground3 js click lessons 2
             </MenuItem>
             <MenuItem component={Link} to="/jsground4" onClick={handleMenuClose}>
-              JS Ground4 
+              JS Ground4
             </MenuItem>
             <MenuItem component={Link} to="/jsground5" onClick={handleMenuClose}>
-              JS Ground5 
+              JS Ground5
             </MenuItem>
             <MenuItem component={Link} to="/jsground6" onClick={handleMenuClose}>
-              JS Ground6 
+              JS Ground6
             </MenuItem>
             <MenuItem component={Link} to="/jsground7" onClick={handleMenuClose}>
-              JS Ground7 
+              JS Ground7
+            </MenuItem>
+            <MenuItem component={Link} to="/jsground8" onClick={handleMenuClose}>
+              JS Ground8
             </MenuItem>
             <MenuItem component={Link} to="/jsgames" onClick={handleMenuClose}>
               JS Games
+            </MenuItem>
+          </Menu>
+
+          {/* Dropdown Menu 2 */}
+          <Button color="inherit" onClick={handleMenuOpen2}>
+            DATA JS 2
+          </Button>
+          <Menu
+            anchorEl={anchorEl2}
+            open={Boolean(anchorEl2)}
+            onClose={handleMenuClose2}
+          >
+            <MenuItem component={Link} to="/v1" onClick={handleMenuClose2}>
+              V1
+            </MenuItem>
+            <MenuItem component={Link} to="/v2" onClick={handleMenuClose2}>
+              V2
+            </MenuItem>
+            <MenuItem component={Link} to="/v3" onClick={handleMenuClose2}>
+              V3 Lesson Learn post and get data
+            </MenuItem>
+            <MenuItem component={Link} to="/v4" onClick={handleMenuClose2}>
+              V4 Lesson Learn 2  filter data
+            </MenuItem>
+            <MenuItem component={Link} to="/v5" onClick={handleMenuClose2}>
+              V5 Lesson Learn 3  
             </MenuItem>
           </Menu>
 
@@ -106,7 +140,7 @@ const Navbar = () => {
             Questionnaire
           </Button>
           <Button color="inherit" component={Link} to="/create-question">
-            Question creator
+            Question Creator
           </Button>
           <Button color="inherit" component={Link} to="/dashboard">
             Dashboard
