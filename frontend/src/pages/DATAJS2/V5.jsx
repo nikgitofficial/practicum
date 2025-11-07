@@ -3,6 +3,7 @@ import React,{useState,useEffect} from "react";
 const V5 = () =>{
       const [click,setClick] = useState("");
       const [search,setSearch] = useState("");
+      const [select,setSelect] = useState("");
 
 
       const groceries = [ "Rice", "Eggs", "Milk", "Bread", "Butter", "Cheese", "Vegetables", "Fruits" ];
@@ -26,6 +27,17 @@ const V5 = () =>{
       f.toLowerCase().includes(search.toLowerCase())
       );
 
+      const groceriesselected = () =>{
+           if(select == "1"){
+            return(
+              <>
+              Rice
+              </>
+            )
+           }
+      }
+
+       
 
 
 
@@ -42,13 +54,15 @@ const V5 = () =>{
                   />
                 <ol>
                     {filteredgroceries.length > 0 ?(filteredgroceries.map((g,index) =>(
-                    <li key={index}>{g}</li>
+                    <li key={index}>{g}<button onClick={() => setSelect("") }>select</button></li>
 
                     ))) :(
                         <p>no data found </p>
 
                     )}
                 </ol>
+                <p>select orders</p>
+                
                 </>
             )
           }else if(click === 2){

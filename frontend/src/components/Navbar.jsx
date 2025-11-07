@@ -133,6 +133,24 @@ const Navbar = () => {
             <MenuItem component={Link} to="/v5" onClick={handleMenuClose2}>
               V5 Lesson Learn 3  
             </MenuItem>
+            <MenuItem component={Link} to="/v6" onClick={handleMenuClose2}>
+              V6 Lesson Learn 4 array method push and pop  React Version
+            </MenuItem>
+            <MenuItem component={Link} to="/v7" onClick={handleMenuClose2}>
+              V6 Lesson Learn 5 array method push and pop   simple JS Version 
+            </MenuItem>
+             <MenuItem component={Link} to="/v8" onClick={handleMenuClose2}>
+              V6 Lesson Learn 6 JS input reverse 
+            </MenuItem>
+              <MenuItem component={Link} to="/v9" onClick={handleMenuClose2}>
+              V6 Lesson Learn 7 array method push using input 
+            </MenuItem>
+              <MenuItem component={Link} to="/v10" onClick={handleMenuClose2}>
+               V6 Lesson Learn 8
+            </MenuItem>
+            <MenuItem component={Link} to="/v11" onClick={handleMenuClose2}>
+               V6 Lesson Learn 9
+            </MenuItem>
           </Menu>
 
           {/* Other buttons */}
