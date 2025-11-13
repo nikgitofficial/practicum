@@ -4,7 +4,7 @@ const V8 = () => {
     const[input,setInput] = useState("");
 
     const reverseinput = () =>{
-          return[...input].reverse().join(" ");
+          return[...input].reverse().join("");
     }
 
     const rev = reverseinput();
@@ -24,7 +24,7 @@ return (
     value={input}
     onChange={(e) => setInput(e.target.value)}
         />
-        <p>reverse input:{rev}</p>
+        <p>{rev}</p>
     
    
    

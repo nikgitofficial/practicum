@@ -146,10 +146,19 @@ const Navbar = () => {
               V6 Lesson Learn 7 array method push using input 
             </MenuItem>
               <MenuItem component={Link} to="/v10" onClick={handleMenuClose2}>
-               V6 Lesson Learn 8
+               V6 Lesson Learn 8 Js logical operator
             </MenuItem>
             <MenuItem component={Link} to="/v11" onClick={handleMenuClose2}>
-               V6 Lesson Learn 9
+               V6 Lesson Learn 9 logical operator and ternary operator
+            </MenuItem>
+            <MenuItem component={Link} to="/v12" onClick={handleMenuClose2}>
+               V6 Lesson Learn 10 login and logout 
+            </MenuItem>
+            <MenuItem component={Link} to="/v13" onClick={handleMenuClose2}>
+               V6 Lesson Learn 11  My practicum Login
+            </MenuItem>
+            <MenuItem component={Link} to="/home" onClick={handleMenuClose2}>
+               home
             </MenuItem>
           </Menu>
 

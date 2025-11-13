@@ -30,6 +30,7 @@ import Jsground6 from "./pages/Jsground6";
 import Jsground7 from "./pages/Jsground7";
 import Jsground8 from "./pages/Jsground8";
 
+
  {/*V2 NAVBAR MENU*/}
  import V1 from "./pages/DATAJS2/V1";
  import V2 from "./pages/DATAJS2/V2";
@@ -42,8 +43,20 @@ import Jsground8 from "./pages/Jsground8";
  import V9 from "./pages/DATAJS2/V9";
  import V10 from "./pages/DATAJS2/V10";
  import V11 from "./pages/DATAJS2/V11";
+ import V12 from "./pages/DATAJS2/V12";
+ import V12login from "./pages/DATAJS2/V12login";
+ import V13 from "./pages/DATAJS2/V13";
+ import Activitylinks from "./pages/practicum/Activitylinks";
 
-
+  {/*Practicum pages*/}
+  import Practicum1 from "./pages/practicum/Practicum1";
+  import Practicum2 from "./pages/practicum/Practicum2";
+  import Practicum3 from "./pages/practicum/Practicum3";
+  import Practicum4 from "./pages/practicum/Practicum4";
+  import Practicum5 from "./pages/practicum/Practicum5";
+  import Practicum6 from "./pages/practicum/Practicum6";
+ 
+ 
 
 
 
@@ -53,7 +66,7 @@ const App = () => {
     <Router>
        <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Activitylinks />} />
           <Route path="/data2" element={<Data2 />} />
           <Route path="/displaydata2" element={<DisplayData2 />} />
           <Route path="/data3" element={<Data3/>}/>
@@ -90,6 +103,19 @@ const App = () => {
           <Route path="/v9" element={<V9/>}/>
           <Route path="/v10" element={<V10/>}/>  
           <Route path="/v11" element={<V11/>}/> 
+          <Route path="/v12" element={<V12/>}/> 
+          <Route path="/v12login" element={<V12login/>}/> 
+          <Route path="/v13" element={<V13/>}/> 
+          <Route path="/home" element={<Home/>}/> 
+
+          {/*practicum pages routes*/}
+          <Route path="/practicum1" element={<Practicum1/>}/>
+          <Route path="/practicum2" element={<Practicum2/>}/>
+          <Route path="/practicum3" element={<Practicum3/>}/>
+          <Route path="/practicum4" element={<Practicum4/>}/>
+          <Route path="/practicum5" element={<Practicum5/>}/>
+          <Route path="/practicum6" element={<Practicum6/>}/>
+          
 
 
 
