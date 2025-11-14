@@ -1,44 +1,58 @@
 import React, { useState } from "react";
+import { Box, Stack, Typography, Button, TextField } from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 const Practicum6 = () => {
-  const [inputs, setInput] = useState("");
-  const [words, setWords] = useState([]);
+   const[input,setInput] = useState("");
+  
+      const reverseinput = () =>{
+            return[...input].reverse(),"*".repeat(input.length) + input.slice(5); ;
+      }
+  
+      const rev = reverseinput();
+      console.log(rev);
 
-  const addWord = () => {
-    if (inputs.trim() === ""){
-        alert("Please enter a word");
-        return null;
-        }
-        
     
-    setWords(prev => [...prev, inputs]);
-    setInput("");
-  };
 
-  const sortWords = () => {
-    setWords(prev => [...prev].sort());
-  };
+     
+
+  
 
   return (
     <>
-      <h1>Practicum 6</h1>
-
-      <input
-        type="text"
-        placeholder="Type something..."
-        value={inputs}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <button onClick={addWord}>Add</button>
-      <button onClick={sortWords}>Sort</button>
-
-      <ul>
-        {words.map((word, index) => (
-          <li key={index}>{word}</li>
-        ))}
-      </ul>
+     <Box
+          sx={{
+            position:"sticky",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "50vh",
+            gap: 2,
+            backgroundColor: "#f5f5f5",
+            padding: 3,
+          }}
+        >
+          <Typography variant="h4">Practicum 6</Typography>
+    
+          <Stack spacing={2} width="300px">
+            <Typography>
+              reverse in js
+            </Typography>
+            <TextField
+              label="input"
+              placeholder="Enter text to reverse"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+            <Typography variant="body1" color="initial">{rev}</Typography>
+            
+          </Stack>
+        </Box>
     </>
+    
   );
 };
 
 export default Practicum6;
+

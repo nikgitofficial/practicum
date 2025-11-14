@@ -55,6 +55,7 @@ import Jsground8 from "./pages/Jsground8";
   import Practicum4 from "./pages/practicum/Practicum4";
   import Practicum5 from "./pages/practicum/Practicum5";
   import Practicum6 from "./pages/practicum/Practicum6";
+  import Practicum7 from "./pages/practicum/Practicum7";
  
  
 
@@ -115,6 +116,7 @@ const App = () => {
           <Route path="/practicum4" element={<Practicum4/>}/>
           <Route path="/practicum5" element={<Practicum5/>}/>
           <Route path="/practicum6" element={<Practicum6/>}/>
+          <Route path="/practicum7" element={<Practicum7/>}/>
           
 
 

@@ -47,7 +47,8 @@ const ActivityLinks = () => {
           <Link to="/practicum3">Practicum 3 data fetching with mui table  </Link>
           <Link to="/practicum4">Practicum  4  calculator </Link>
           <Link to="/practicum5">Practicum  5 spread operator  JS  </Link>
-          <Link to="/practicum6">Practicum  6  sorting js   </Link>
+          <Link to="/practicum6">Practicum  6  reverse input with masking    </Link>
+          <Link to="/practicum7">Practicum  7 </Link>
           
         </Stack>
       </Box>
