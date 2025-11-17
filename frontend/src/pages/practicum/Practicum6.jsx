@@ -33,7 +33,7 @@ const Practicum6 = () => {
             padding: 3,
           }}
         >
-          <Typography variant="h4">Practicum 6</Typography>
+          <Typography variant="h4">Practicum 6 reverse input with masking </Typography>
     
           <Stack spacing={2} width="300px">
             <Typography>

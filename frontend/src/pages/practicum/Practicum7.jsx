@@ -1,11 +1,19 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { increment, decrement, addByAmount } from "../../features/counterSlice";
 
 const Practicum7 = () => {
-  const user = { name: "nickapcs123", age: 21, isvalid: false };
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
 
   return (
     <>
-      {!user.isvalid ? <h1>welcome</h1> : <h1>not welcome</h1>}
+      <h1>Redux Lesson</h1>
+      <h2>Counter: {count}</h2>
+
+      <button onClick={() => dispatch(increment())}>+1</button>
+      <button onClick={() => dispatch(decrement())}>-1</button>
+      <button onClick={() => dispatch(addByAmount(5))}>+5</button>
     </>
   );
 };
